@@ -59,6 +59,11 @@
             "required": true,
             "value": "php_7"
         },
+         "CLONER_TOKEN": {
+            "description": "fill a bot token if you want to use cloning features Else You can Leave Blank",
+            "required": false,
+            "value": ""
+            },
         "ALIVE_NAME": {
             "description": "اتركها كما هي",
             "required": true,
