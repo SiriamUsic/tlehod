@@ -39,11 +39,11 @@ async def ytsearch(_, message: Message):
         i = 0
         text = ""
         while i < 5:
-            text += f"🏷 **الاسم:** __{results[i]['title']}__\n"
+            text += f"•═════•| [𓆩𝐒𝐎𝐔𝐑𝐂𝐄 𝐉𝐀𝐕𝐀𓆪](https://t.me/JAVA_tlethon) |•═════•\n\n🏷 **الاسم:** __{results[i]['title']}__\n"
             text += f"⏱ **المدة:** `{results[i]['duration']}`\n"
             text += f"👀 **المشاهدات:** `{results[i]['views']}`\n"
             text += f"📣 **القناة:** {results[i]['channel']}\n"
-            text += f"🔗 **الرابط**: https://www.youtube.com{results[i]['url_suffix']}\n\n"
+            text += f"🔗 **الرابط**: https://www.youtube.com{results[i]['url_suffix']}\n\n•═════•| [𓆩𝐒𝐎𝐔𝐑𝐂𝐄 𝐉𝐀𝐕𝐀𓆪](https://t.me/JAVA_tlethon) |•═════•\n\n"
             i += 1
         await m.edit(text, reply_markup=keyboard, disable_web_page_preview=True)
     except Exception as e:
